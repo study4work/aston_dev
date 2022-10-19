@@ -39,11 +39,4 @@ public class MyArrayList<T> {
         size--;
     }
 
-    public static void main(String[] args) {
-        MyArrayList<Integer> s = new MyArrayList<>();
-        s.add(1);
-        s.add(2);
-        System.out.println(s.get(3));
-    }
-
 }
