@@ -15,13 +15,9 @@ public class MyArrayList<T> {
 
     public T get(int index) {
         T t = null;
-        try {
             if(index < array.length - 1) {
                 t = (T) array[index];
             }
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Index out of bounds");
-        }
         return t;
     }
 
@@ -41,6 +37,13 @@ public class MyArrayList<T> {
         }
         array[size] = null;
         size--;
+    }
+
+    public static void main(String[] args) {
+        MyArrayList<Integer> s = new MyArrayList<>();
+        s.add(1);
+        s.add(2);
+        System.out.println(s.get(3));
     }
 
 }
