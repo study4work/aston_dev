@@ -31,6 +31,7 @@ public class MyArrayList<T> {
         return size;
     }
 
+
     public void remove(int index) {
         for (int i = index; i < size; i++) {
             array[i] = array[i + 1];
